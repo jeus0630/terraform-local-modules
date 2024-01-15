@@ -1,0 +1,17 @@
+resource "aws_key_pair" "key" {
+  key_name   = "saju-key-test"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC1Tce55eo4wHwAATcuC/amwSASV9ek2Ojxi2HxbHpYiVIFQlTZgyzreqjb40lnvCsnrg146dCDTbGHv9KZxIn9q7jhbW180jHAQogZlj0PmEh4qk/Z+43G8OGP7EuCr8TvhB0SfuKwA+THEfeYGmjSOfk3kD9vOUNGKJKUnhRlOnKInuk8rHrL4Yb/3ihnYyXo9FaD8U+Sf6vM3hKOmGdYLy88DoyMA8Kuy/NugmfVB5iigNUDUkNcJQR/W4zlZXTLWa5cl5RtOvGggzSxcKNevQVFeJ4lVFefjzZky66EnPetGX9RwwyZRwHrD5xFfk94z9jdFyAvLhrORbW3EQqF9vcjt1EanB3KQgvAUrn3gMWMjrJ7Yy55YrkWZnyX8UDXQHpgMkhIKRe28vS/yb1ThGc5zbQG4HMOdzJeaFY5pR0bt9/lLK4qMO1SoK7iYO5PzbnNsyL5WNpIeHj3YQntcR3q+s6iIk+FJw7PulIdxdQR8ONHJNLVjThjTs7DWlT34ZQukoDeSF4D0DiMAdiTAFZ4AHZQMLra7iVgvkr04hcTusIeh0Vf1RQKjuWWD5ag7gbnmmVbVMujBJ4nHFZSxf7RTOv47r6Boil79q3930JVkSA72Qr3y9Z+4+t3rb05ws0m/HppBBOcesQhk6aDZolih5NiHTkdGCUVqjjyPw== Admin@DESKTOP-UBQUQNG"
+
+  tags = {
+    Name = "saju-test"
+  }
+}
+
+resource "aws_key_pair" "key2" {
+  key_name   = "saju-key-prod"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC1Tce55eo4wHwAATcuC/amwSASV9ek2Ojxi2HxbHpYiVIFQlTZgyzreqjb40lnvCsnrg146dCDTbGHv9KZxIn9q7jhbW180jHAQogZlj0PmEh4qk/Z+43G8OGP7EuCr8TvhB0SfuKwA+THEfeYGmjSOfk3kD9vOUNGKJKUnhRlOnKInuk8rHrL4Yb/3ihnYyXo9FaD8U+Sf6vM3hKOmGdYLy88DoyMA8Kuy/NugmfVB5iigNUDUkNcJQR/W4zlZXTLWa5cl5RtOvGggzSxcKNevQVFeJ4lVFefjzZky66EnPetGX9RwwyZRwHrD5xFfk94z9jdFyAvLhrORbW3EQqF9vcjt1EanB3KQgvAUrn3gMWMjrJ7Yy55YrkWZnyX8UDXQHpgMkhIKRe28vS/yb1ThGc5zbQG4HMOdzJeaFY5pR0bt9/lLK4qMO1SoK7iYO5PzbnNsyL5WNpIeHj3YQntcR3q+s6iIk+FJw7PulIdxdQR8ONHJNLVjThjTs7DWlT34ZQukoDeSF4D0DiMAdiTAFZ4AHZQMLra7iVgvkr04hcTusIeh0Vf1RQKjuWWD5ag7gbnmmVbVMujBJ4nHFZSxf7RTOv47r6Boil79q3930JVkSA72Qr3y9Z+4+t3rb05ws0m/HppBBOcesQhk6aDZolih5NiHTkdGCUVqjjyPw== Admin@DESKTOP-UBQUQNG"
+
+  tags = {
+    Name = "saju-prod"
+  }
+}
